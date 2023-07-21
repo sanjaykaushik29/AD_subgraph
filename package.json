@@ -4,7 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ /AdSubgraph",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ sanjaykaushik29/adsubgraph",
     "create-local": "graph create --node http://localhost:8020/ /AdSubgraph",
     "remove-local": "graph remove --node http://localhost:8020/ /AdSubgraph",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 /AdSubgraph",

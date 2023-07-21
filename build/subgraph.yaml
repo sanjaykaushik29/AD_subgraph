@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Contract
@@ -19,8 +19,9 @@ dataSources:
         - Upgraded
       abis:
         - name: Contract
-          file: ./abis/Contract.json
+          file: Contract/abis/Contract.json
       eventHandlers:
-        - event: CreateLaunchpad(indexed address,indexed address,uint256,string,string,string,uint256)  
+        - event: CreateLaunchpad(indexed address,indexed
+            address,uint256,string,string,string,uint256)
           handler: handleAdminCreateLaunchpad
-      file: ./src/contract.ts
+      file: Contract/Contract.wasm
